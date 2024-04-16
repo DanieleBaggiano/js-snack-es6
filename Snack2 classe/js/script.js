@@ -22,3 +22,20 @@ array = [
 ];
 
 let guidare = [];
+
+for (let i = 0; i < array.length; i++) {
+    let persona = array[i];
+    let frase = persona.nome + " " + persona.cognome + " ";
+
+    if (persona.età >= 18) {
+        frase += "Può guidare!";
+    } else {
+        frase += "Non può guidare!";
+    }
+    guidare.push(frase);
+};
+
+console.log("Hanno l'età per guidare?");
+for (let j = 0; j < guidare.length; j++) {
+    console.log(guidare[j]);
+}
